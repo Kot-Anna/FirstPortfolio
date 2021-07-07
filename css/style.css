@@ -25,7 +25,6 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--dark-grey);
   line-height: 1.6;
-  background: #fff;
 }
 
 a {
@@ -80,7 +79,7 @@ img {
 
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: auto;
   height: 100%;
   padding: 0 3rem;
 }
@@ -180,7 +179,6 @@ img {
 
 #main-nav {
   padding-top: 2rem;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -414,25 +412,31 @@ img {
   padding: 10vh 0 5vh;
 }
 
-.intro-right input,
-.intro-right textarea {
+.contact-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
   font-family: "Montserrat", sans-serif;
   display: block;
   padding: 1rem 1.5rem;
   margin: 1.5vh 0;
-  width: 60%;
+  width: 100%;
   border: none;
   border-radius: 1rem;
 }
 
-.intro-right textarea {
-  height: 15vh;
+.contact-form textarea {
+  height: 20vh;
 }
 
-.intro-right .btn {
+.contact-form .btn {
   font-size: 1.6rem;
   padding: 1rem 3rem;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .contact .intro-left h3 {
