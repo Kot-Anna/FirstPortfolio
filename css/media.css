@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  p {
+    font-weight: 300;
+  }
+
   /* hero */
 
   #main-nav {
