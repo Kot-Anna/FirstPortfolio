@@ -288,10 +288,21 @@
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    gap: 2rem;
+  }
+
+  .skills-grid .icons-left {
+    margin-bottom: 10vh;
   }
 
   .skills-grid .iconify {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .hero {
+    height: 350px;
   }
 }
 
