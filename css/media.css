@@ -121,7 +121,7 @@
   /* contact*/
 
   #contact {
-    padding: 5vh 0;
+    padding: 5vh 0 3vh;
   }
 
   .contact {
@@ -144,6 +144,11 @@
 
   .contact .social {
     display: inline-block;
+  }
+
+  .copyright {
+    margin-top: 3vh;
+    text-align: center;
   }
 }
 

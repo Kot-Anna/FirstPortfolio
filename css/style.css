@@ -407,7 +407,7 @@ img {
 /* Contact me */
 
 #contact {
-  padding: 10vh 0 5vh;
+  padding: 10vh 0 1vh;
 }
 
 .contact-form {
@@ -444,4 +444,9 @@ img {
 
 .contact .intro-left h2 {
   margin-bottom: 20vh;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  opacity: 0.5;
 }
