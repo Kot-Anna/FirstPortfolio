@@ -199,15 +199,9 @@ img {
 
 .hero {
   height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s 0.25 ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero.is-visible {
-  opacity: 1;
 }
 
 .hero-text {
@@ -224,23 +218,27 @@ img {
 }
 
 .hero-img {
-  transform: scale(0.9);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  opacity: 0;
+  transform: translate(10%, 10%) scale(0.9);
   overflow: hidden;
+}
+
+.hero-text {
+  opacity: 0;
+  transform: translate(-10%, 10%) scale(0.9);
 }
 
 .hero-img,
 .hero-text {
   transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-    filter 2s 0.25s ease-in-out;
-  will-change: transform, filter;
+    opacity 2s 0.25s ease-in-out;
+  will-change: transform;
 }
 
 .is-visible .hero-text,
 .is-visible .hero-img {
-  transform: scale(1);
-  filter: none;
+  opacity: 1;
+  transform: none;
 }
 
 /* Projects Section*/
