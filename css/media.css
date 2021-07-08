@@ -126,9 +126,7 @@
 
   .contact {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 5vh;
   }
 
   .contact .contact-form {
@@ -136,24 +134,7 @@
     padding: 0;
   }
 
-  .contact .intro-right,
-  .contact .intro-left {
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .contact .intro-right input,
-  .contact .intro-right textarea {
-    width: 100%;
-  }
-
-  .contact .intro-right .btn {
-    width: 50%;
-  }
-
   .contact .intro-left h3 {
-    color: var(--secondary-color);
     width: 100%;
   }
 
