@@ -45,7 +45,7 @@ h1 {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 5rem;
-  line-height: 2.5;
+  line-height: 2;
 }
 
 h2 {
@@ -214,7 +214,7 @@ img {
 
 .hero h3 {
   font-size: 2.4rem;
-  line-height: 0.5;
+  line-height: 2;
 }
 
 .hero-img {
@@ -359,7 +359,7 @@ img {
 .about-me .intro-right img {
   width: 50%;
   border-radius: 50%;
-  margin: 3vh 0 0 1vw;
+  margin-top: 3vh;
 }
 
 /* Skills */
