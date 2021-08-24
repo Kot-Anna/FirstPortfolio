@@ -10,6 +10,9 @@
 }
 
 /* Common */
+/* * {
+  outline: 1px solid #f00 !important;
+} */
 
 html {
   font-size: 10px;
@@ -68,7 +71,6 @@ h4 {
 
 p {
   font-size: 1.6rem;
-  
 }
 
 img {
