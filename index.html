@@ -323,6 +323,7 @@
             </div>
             <div class="intro-right">
               <form
+                onsubmit="return validateSubmit()"
                 name="contact"
                 method="POST"
                 data-netlify="true"
@@ -354,7 +355,12 @@
                 <p id="error-message" class="error">
                   Message can not contain special signs
                 </p>
-                <button type="submit" class="btn btn-yellow">Submit</button>
+                <button type="submit" class="btn btn-yellow" id="submitbtn">
+                  Submit
+                </button>
+                <p id="error-submit" class="error">
+                  Form fields can not be empty or contain unexpected values
+                </p>
               </form>
             </div>
           </div>
