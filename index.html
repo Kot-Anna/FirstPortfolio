@@ -329,17 +329,26 @@
                   id="name"
                   placeholder="Enter Name"
                 />
+                <p id="error-name" class="error">
+                  Name can contain letters only and be between 2 - 15 characters
+                </p>
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Enter Email"
                 />
+                <p id="error-email" class="error">
+                  Please enter a valid email address
+                </p>
                 <textarea
                   name="message"
                   id="message"
                   placeholder="Enter your message"
                 ></textarea>
+                <p id="error-message" class="error">
+                  Message can not contain special signs
+                </p>
                 <button type="submit" class="btn btn-yellow">Submit</button>
               </form>
             </div>
