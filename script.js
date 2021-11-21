@@ -59,50 +59,66 @@ function isElementInViewport(el) {
 document.getElementById('name').addEventListener('blur', validateName)
 document.getElementById('email').addEventListener('blur', validateEmail)
 document.getElementById('message').addEventListener('blur', validateMessage)
+const fname = document.getElementById('name');
+const nameerror = document.getElementById('error-name')
+const email = document.getElementById('email');
+const emailerror = document.getElementById('error-email')
+const message = document.getElementById('message');
+const msgerror = document.getElementById('error-message')
 
 function validateName () {
-  const name = document.getElementById('name');
-  const error = document.getElementById('error-name')
+
   const reg = /^[a-zA-Z ]{2,15}$/;
 
-
-  if (reg.test(name.value) || name.value.length == 0) {
-    error.classList.remove('error-show')
+  if (reg.test(fname.value) || fname.value.length == 0) {
+    nameerror.classList.remove('error-show');
   }
 
-  else if (!reg.test(name.value)) {
-    error.classList.add('error-show')
+  else if (!reg.test(fname.value)) {
+    nameerror.classList.add('error-show');
   }
-
 }
 
 function validateEmail () {
 
-  const email = document.getElementById('email');
-  const error = document.getElementById('error-email')
   const reg = /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/;
 
-
   if (reg.test(email.value) || email.value.length == 0) {
-    error.classList.remove('error-show')
+    emailerror.classList.remove('error-show')
   }
 
   else if (!reg.test(email.value)) {
-    error.classList.add('error-show')
+    emailerror.classList.add('error-show')
   }
 }
 
 function validateMessage () {
-  const message = document.getElementById('message');
-  const error = document.getElementById('error-message')
+
   const reg = /[a-zA-Z0-9 _?!'"()\.\/\-\:\;\,\n]$/;
 
-
   if (reg.test(message.value) || message.value.length == 0) {
-    error.classList.remove('error-show')
+    msgerror.classList.remove('error-show')
   }
 
   else if (!reg.test(message.value)) {
-    error.classList.add('error-show')
+    msgerror.classList.add('error-show')
+  }
+}
+
+function validateSubmit () {
+
+  const error = $('#error-submit');
+
+  if (fname.value.length === 0 || email.value.length === 0 || message.value.length === 0 || nameerror.classList.contains('error-show') || emailerror.classList.contains('error-show') || msgerror.classList.contains('error-show')) 
+  {
+    error.addClass('error-show');
+    setTimeout(function() {
+      error.removeClass('error-show');
+    }, 3000);
+
+    return false  
+  } 
+  else {
+    return true
   }
 }
