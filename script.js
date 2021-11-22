@@ -68,6 +68,9 @@ const msgerror = document.getElementById('error-message')
 
 function validateName () {
 
+  //Removing label showing on blurr event
+  document.getElementById('name-label').classList.remove("label-show")
+
   const reg = /^[a-zA-Z ]{2,15}$/;
 
   if (reg.test(fname.value) || fname.value.length == 0) {
@@ -81,6 +84,9 @@ function validateName () {
 
 function validateEmail () {
 
+  //Removing label showing on blurr event
+  document.getElementById('email-label').classList.remove("label-show")
+
   const reg = /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/;
 
   if (reg.test(email.value) || email.value.length == 0) {
@@ -93,6 +99,9 @@ function validateEmail () {
 }
 
 function validateMessage () {
+
+  //Removing label showing on blurr event
+  document.getElementById('msg-label').classList.remove("label-show")
 
   const reg = /[a-zA-Z0-9 _?!'"()\.\/\-\:\;\,\n]$/;
 
@@ -121,4 +130,22 @@ function validateSubmit () {
   else {
     return true
   }
+}
+
+// Labels
+
+document.getElementById('name').addEventListener('focus', showLabelName)
+document.getElementById('email').addEventListener('focus', showLabelEmail)
+document.getElementById('message').addEventListener('focus', showLabelMsg)
+
+function showLabelName () {
+  document.getElementById('name-label').classList.add("label-show")
+}
+
+function showLabelEmail() {
+  document.getElementById('email-label').classList.add("label-show")
+}
+
+function showLabelMsg() {
+  document.getElementById('msg-label').classList.add("label-show")
 }
