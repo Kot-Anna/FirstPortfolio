@@ -438,9 +438,9 @@ img {
 
 .spam {
   margin-top: 1.5vh;
-  width: 100%;
   border-radius: 1rem;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .contact .intro-left h3 {
