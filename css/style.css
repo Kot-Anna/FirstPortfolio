@@ -436,6 +436,12 @@ img {
   width: 100%;
 }
 
+.spam {
+  margin-top: 1.5vh;
+  width: 100%;
+  border-radius: 1rem;
+}
+
 .contact .intro-left h3 {
   color: var(--secondary-color);
   width: 60%;
