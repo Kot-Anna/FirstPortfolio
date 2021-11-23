@@ -166,7 +166,7 @@
 
   .contact {
     width: 100%;
-    padding: 0 5vh;
+    padding: 0 2rem;
   }
 
   .contact .contact-form {
@@ -276,7 +276,7 @@
   }
 
   .intro-left {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
   .intro-right {
