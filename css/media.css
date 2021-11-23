@@ -186,6 +186,10 @@
     display: inline-block;
   }
 
+  .intro-right form {
+    text-align: left;
+  }
+
   .copyright {
     margin-top: 3vh;
     text-align: center;
@@ -271,9 +275,12 @@
     font-size: 1.8rem;
   }
 
-  .intro-right,
   .intro-left {
     padding: 2rem 1rem;
+  }
+
+  .intro-right {
+    padding: 0;
   }
 
   .project-card {
