@@ -459,14 +459,8 @@ img {
   margin: 1vh 0;
 }
 
-.g-recaptcha {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.spamcaptcha {
-  margin: 0 auto;
-  width: 100%;
+.g-recaptcha div:first-child {
+  margin: auto;
 }
 
 .contact .intro-left h3 {
