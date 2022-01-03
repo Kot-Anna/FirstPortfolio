@@ -481,9 +481,9 @@ img {
   margin: 1vh 0;
 }
 
-.g-recaptcha div:first-child {
+/* .g-recaptcha div:first-child {
   margin: auto;
-}
+} */
 
 .contact .intro-left h3 {
   color: var(--secondary-color);

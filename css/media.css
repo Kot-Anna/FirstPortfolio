@@ -194,10 +194,14 @@
 
   #contact {
     padding: 5vh 0 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact {
-    width: 100%;
+    width: 60%;
     padding: 0 1rem;
   }
 
@@ -364,6 +368,10 @@
 
   .skills-grid .iconify {
     font-size: 3rem;
+  }
+
+  .contact {
+    width: 90%;
   }
 }
 
