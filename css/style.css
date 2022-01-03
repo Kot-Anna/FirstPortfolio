@@ -40,10 +40,11 @@ ul {
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 5rem;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  margin-right: 20px;
+  margin-bottom: 6rem;
 }
 
 h2 {
@@ -169,13 +170,17 @@ img {
 
 /* Header */
 #home {
-  height: 100vh;
+  height: 90vh;
 }
 
-/* Navbar */
-
 #main-nav {
-  padding-top: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,6 +201,7 @@ img {
 
 .hero {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,15 +209,24 @@ img {
 
 .hero-text {
   transform: scale(0.9);
+  width: 90%;
 }
 
 .hero h2 {
   font-size: 6rem;
+  line-height: 1.5;
+}
+
+.hero h1 {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  margin-right: 20px;
 }
 
 .hero h3 {
   font-size: 2.4rem;
-  line-height: 2;
+  line-height: 1;
 }
 
 .hero-img {
@@ -403,8 +418,15 @@ img {
 
 /* Contact me */
 
+.contact-wrapper {
+  width: 100%;
+  padding: 3rem 0;
+}
+
 #contact {
-  padding: 10vh 0 1vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 3rem;
 }
 
 .contact-form {
@@ -457,6 +479,10 @@ img {
 
 .spam {
   margin: 1vh 0;
+}
+
+.g-recaptcha div:first-child {
+  margin: auto;
 }
 
 .contact .intro-left h3 {
