@@ -55,6 +55,7 @@
   }
 
   #main-nav {
+    padding: 1rem 0;
     justify-content: center;
     align-items: center;
   }
@@ -82,10 +83,6 @@
   }
 
   /* hero */
-
-  #main-nav {
-    padding-top: 7vh;
-  }
 
   .hero-text {
     display: flex;
@@ -262,10 +259,13 @@
     letter-spacing: initial;
   }
 
-  #main-nav {
-    padding-top: 2vh;
-    text-align: center;
+  .container-nav {
     position: static;
+  }
+
+  #main-nav {
+    padding: 1rem 0;
+    text-align: center;
   }
 
   .nav-links ul li {
