@@ -1,10 +1,8 @@
 @media only screen and (min-width: 2500px) {
-  .container {
+  .container,
+  #main-nav,
+  #contact {
     max-width: 2000px;
-  }
-
-  #main-nav {
-    padding-top: 7rem;
   }
 
   h1 {
