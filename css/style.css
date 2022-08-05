@@ -386,9 +386,10 @@ img {
   transition: color 0.5s ease-out;
 }
 
-.skills .iconify:hover {
+
+/* .skills .imghover:hover {
   color: var(--secondary-color);
-}
+} */
 
 /* Contact me */
 
